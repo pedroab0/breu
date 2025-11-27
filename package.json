@@ -1,0 +1,47 @@
+{
+  "name": "breu",
+  "displayName": "Breu",
+  "description": "A dark theme with pure black background.",
+  "version": "0.1.0",
+  "publisher": "pedroab0",
+  "author": {
+    "name": "Pedro Barbosa"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pedroab0/breu"
+  },
+  "bugs": {
+    "url": "https://github.com/pedroab0/breu/issues"
+  },
+  "homepage": "https://github.com/pedroab0/breu#readme",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "dark theme",
+    "black",
+    "dracula",
+    "breu"
+  ],
+  "icon": "assets/breu.png",
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Breu",
+        "uiTheme": "vs-dark",
+        "path": "./themes/breu-color-theme.json"
+      }
+    ]
+  }
+}
