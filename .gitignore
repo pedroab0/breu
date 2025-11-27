@@ -1,0 +1,11 @@
+# Docs
+ROADMAP.md
+
+# Build artifacts
+*.vsix
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
