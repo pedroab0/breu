@@ -2,20 +2,27 @@
   "name": "breu",
   "displayName": "Breu",
   "description": "A dark theme with pure black background.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "pedroab0",
   "author": {
-    "name": "Pedro Barbosa"
+    "name": "Pedro Barbosa",
+    "url": "https://github.com/pedroab0"
   },
   "license": "MIT",
+  "pricing": "Free",
+  "scripts": {
+    "build": "node ./scripts/build.js",
+    "package": "vsce package",
+    "vscode:prepublish": "npm run build"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedroab0/breu"
+    "url": "https://github.com/pedroab0/breu.git"
   },
   "bugs": {
     "url": "https://github.com/pedroab0/breu/issues"
   },
-  "homepage": "https://github.com/pedroab0/breu#readme",
+  "homepage": "https://github.com/pedroab0/breu",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -27,7 +34,10 @@
     "dark",
     "dark theme",
     "black",
+    "oled",
     "dracula",
+    "color theme",
+    "syntax highlighting",
     "breu"
   ],
   "icon": "assets/breu.png",
@@ -35,6 +45,8 @@
     "color": "#000000",
     "theme": "dark"
   },
+  "markdown": "github",
+  "qna": "marketplace",
   "contributes": {
     "themes": [
       {
@@ -43,5 +55,9 @@
         "path": "./themes/breu-color-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0",
+    "@vscode/vsce": "^3.0.0"
   }
 }
