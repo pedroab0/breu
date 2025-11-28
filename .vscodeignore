@@ -3,4 +3,9 @@
 .gitignore
 .gitattributes
 ROADMAP.md
+THEME.md
 *.vsix
+src/**
+scripts/**
+node_modules/**
+package-lock.json
