@@ -6,6 +6,8 @@
 
 A dark theme for Visual Studio Code with a true `#000000` black background.
 
+![Open VSX Downloads](https://img.shields.io/open-vsx/dt/pedroab0/breu?style=for-the-badge&label=Open%20VSX%20Downloads&color=%238BE9FD)
+
 ## Screenshots
 
 ### TypeScript
