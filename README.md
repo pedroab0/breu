@@ -6,7 +6,11 @@
 
 A dark theme for Visual Studio Code with a true `#000000` black background.
 
-![Open VSX Downloads](https://img.shields.io/open-vsx/dt/pedroab0/breu?style=for-the-badge&label=Open%20VSX%20Downloads&color=%238BE9FD)
+<p align="center">
+  <a href="https://marketplace.visualstudio.com/items?itemName=pedroab0.breu"><img src="https://img.shields.io/open-vsx/dt/pedroab0/breu?style=for-the-badge&label=Open%20VSX%20Downloads&color=%238BE9FD" alt="Open VSX Downloads"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=pedroab0.breu"><img src="https://img.shields.io/visual-studio-marketplace/d/pedroab0.breu?style=for-the-badge&label=VS%20Code%20Downloads&color=%238BE9FD" alt="VS Code Downloads"></a>
+  <a href="https://open-vsx.org/extension/pedroab0/breu"><img src="https://img.shields.io/visual-studio-marketplace/i/pedroab0.breu?style=for-the-badge&label=VS%20Code%20Installs&color=%238BE9FD" alt="VS Code Installs"></a>
+</p>
 
 ## Screenshots
 
@@ -17,6 +21,10 @@ A dark theme for Visual Studio Code with a true `#000000` black background.
 ### C#
 
 ![C#](assets/c-sharp.png)
+
+## More Language Samples
+
+Explore additional language examples at [VS Code Themes](https://vscodethemes.com/e/pedroab0.breu/breu).
 
 ## Installation
 
@@ -36,8 +44,16 @@ A dark theme for Visual Studio Code with a true `#000000` black background.
 
 ### Manual Installation
 
+**VS Code:**
+
 ```bash
-git clone https://github.com/pedroab0/breu.git ~/.vscode/extensions/breu
+git clone https://github.com/pedroab0/breu.git ~/.vscode/extensions/pedroab0.breu
+```
+
+**VSCodium:**
+
+```bash
+git clone https://github.com/pedroab0/breu.git ~/.vscode-oss/extensions/pedroab0.breu
 ```
 
 Restart your editor and select the theme.
