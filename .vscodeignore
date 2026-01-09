@@ -2,10 +2,9 @@
 .vscode/**
 .gitignore
 .gitattributes
-ROADMAP.md
-THEME.md
 *.vsix
+package-lock.json
+docs/**
 src/**
 scripts/**
 node_modules/**
-package-lock.json
