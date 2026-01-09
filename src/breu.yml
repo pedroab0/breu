@@ -25,7 +25,7 @@ breu:
     - &PURPLE    '#BD93F9'   # Constants, this/self
     - &RED       '#FF5555'   # Errors, deletions
     - &YELLOW    '#F1FA8C'   # Strings
-    - &BLUE      '#2E8CCF'   # Classes, info
+    - &BLUE      '#179FFF'   # Classes, info
 
   ansi:
     - &ANSI_BLACK          '#21222C'
@@ -53,6 +53,23 @@ breu:
     - &UI_FG_DIM      '#6B717D'
     - &LINE_NUMBER    '#495162'
     - &WARNING_GOLD   '#CCA700'
+
+# =============================================================================
+# Semantic Token Colors
+# =============================================================================
+# Enhanced IDE highlighting for language-specific tokens
+
+semanticTokenColors:
+  class: *BLUE
+  interface: *PINK
+  type: *PINK
+  function: *GREEN
+  method: *GREEN
+  parameter:
+    foreground: *ORANGE
+    fontStyle: italic
+  variable.readonly: *PURPLE
+  property.readonly: *PURPLE
 
 # =============================================================================
 # UI Colors
@@ -533,6 +550,15 @@ tokenColors:
     scope: [entity.name.tag]
     settings:
       foreground: *PINK
+
+  - name: React/JSX components
+    scope:
+      - support.class.component
+      - support.class.component.jsx
+      - support.class.component.tsx
+      - entity.name.tag support.class.component
+    settings:
+      foreground: *BLUE
 
   - name: CSS attribute parent selectors ('&')
     scope: [entity.other.attribute-name.parent-selector]

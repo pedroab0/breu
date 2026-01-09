@@ -46,7 +46,7 @@ Please use colors from the Breu palette:
 | Purple | `#BD93F9` |
 | Red | `#FF5555` |
 | Yellow | `#F1FA8C` |
-| Blue | `#2E8CCF` |
+| Blue | `#179FFF` |
 
 ## Submitting Changes
 

@@ -16,7 +16,7 @@ A dark VS Code theme with a pure black background and carefully curated color pa
 | Purple | `#BD93F9` | Constants, `this`/`self`, headings |
 | Red | `#FF5555` | Errors, deletions, RegExp assertions |
 | Yellow | `#F1FA8C` | Strings, quotes, blockquotes |
-| Blue | `#2E8CCF` | Classes, activity bar badge, info icons |
+| Blue | `#179FFF` | Classes, activity bar badge, info icons |
 
 ## Theme File Structure
 
@@ -39,7 +39,7 @@ breu-color-theme.json
 |-----|-------|-------------|
 | `activityBar.background` | `#000000` | Sidebar background |
 | `activityBar.foreground` | `#D7DAE0` | Icon color |
-| `activityBarBadge.background` | `#2E8CCF` | Badge background |
+| `activityBarBadge.background` | `#179FFF` | Badge background |
 | `activityBarBadge.foreground` | `#F8FAFD` | Badge text |
 
 ### Editor
@@ -61,7 +61,7 @@ breu-color-theme.json
 | `editorCursor.foreground` | `#8BE9FD` | Cursor color (cyan) |
 | `editorError.foreground` | `#FF5555` | Error underline (red) |
 | `editorWarning.foreground` | `#CCA700` | Warning underline (gold) |
-| `editorInfo.foreground` | `#2E8CCF` | Info underline (blue) |
+| `editorInfo.foreground` | `#179FFF` | Info underline (blue) |
 
 ### Bracket Highlighting
 
@@ -106,7 +106,7 @@ breu-color-theme.json
 |-----|-------|-------------|
 | `notifications.background` | `#21252b` | Notification background |
 | `notifications.foreground` | `#d7dae0` | Notification text |
-| `notificationsInfoIcon.foreground` | `#2E8CCF` | Info icon (blue) |
+| `notificationsInfoIcon.foreground` | `#179FFF` | Info icon (blue) |
 | `notificationsWarningIcon.foreground` | `#FFB86C` | Warning icon (orange) |
 | `notificationsErrorIcon.foreground` | `#FF5555` | Error icon (red) |
 
@@ -177,8 +177,8 @@ breu-color-theme.json
 
 | Name | Scopes | Color | Style |
 |------|--------|-------|-------|
-| Class names | `entity.name.class`, `entity.name.type.class` | `#2E8CCF` | - |
-| Inherited classes | `entity.other.inherited-class` | `#2E8CCF` | italic |
+| Class names | `entity.name.class`, `entity.name.type.class` | `#179FFF` | - |
+| Inherited classes | `entity.other.inherited-class` | `#179FFF` | italic |
 | Types | `entity.name.type`, `support.type`, etc. | `#FF79C6` | italic |
 | Generics | `entity.name.type.type-parameter` | `#FF79C6` | - |
 

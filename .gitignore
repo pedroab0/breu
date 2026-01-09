@@ -1,5 +1,6 @@
 # Docs
 ROADMAP.md
+docs/
 
 # Build artifacts
 *.vsix

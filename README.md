@@ -16,11 +16,11 @@ A dark theme for Visual Studio Code with a true `#000000` black background.
 
 ### TypeScript
 
-![TypeScript](assets/typescript.png)
+![TypeScript](assets/typescript.jpg)
 
 ### C#
 
-![C#](assets/c-sharp.png)
+![C#](assets/c-sharp.jpg)
 
 ## More Language Samples
 
@@ -71,7 +71,7 @@ Restart your editor and select the theme.
 | ![Purple](https://img.shields.io/badge/-BD93F9-BD93F9) | `#BD93F9` | Constants, `this`/`self` |
 | ![Red](https://img.shields.io/badge/-FF5555-FF5555) | `#FF5555` | Errors, deletions |
 | ![Yellow](https://img.shields.io/badge/-F1FA8C-F1FA8C) | `#F1FA8C` | Strings, quotes |
-| ![Blue](https://img.shields.io/badge/-2E8CCF-2E8CCF) | `#2E8CCF` | Classes, info |
+| ![Blue](https://img.shields.io/badge/-179FFF-179FFF) | `#179FFF` | Classes, components, info |
 | ![Comment](https://img.shields.io/badge/-6272A4-6272A4) | `#6272A4` | Comments, muted text |
 
 ## Features
