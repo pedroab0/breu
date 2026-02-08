@@ -1,0 +1,22 @@
+{
+  "name": "Breu",
+  "type": "dark",
+  "Background": "#000000",
+  "Foreground": "#F8F8F2",
+  "LightBlue": "#5CB8FF",
+  "AccentBlue": "#179FFF",
+  "AccentPurple": "#BD93F9",
+  "AccentCyan": "#8BE9FD",
+  "AccentGreen": "#50FA7B",
+  "AccentYellow": "#F1FA8C",
+  "AccentRed": "#FF5555",
+  "Comment": "#6272A4",
+  "Gray": "#9DA5B4",
+  "DiffAdded": "#50FA7B",
+  "DiffRemoved": "#FF5555",
+  "GradientColors": [
+    "#BD93F9",
+    "#179FFF",
+    "#8BE9FD"
+  ]
+}
