@@ -7,10 +7,10 @@ const THEME_DIR = path.join(__dirname, '..', 'themes');
 const OUTPUT_FILE = path.join(THEME_DIR, 'breu-color-theme.json');
 
 async function build() {
-  console.log('Building Breu theme...');
+  console.log("Building Breu theme...");
 
   // Read YAML source
-  const yamlContent = await fs.promises.readFile(SRC_FILE, 'utf-8');
+  const yamlContent = await fs.promises.readFile(SRC_FILE, "utf-8");
 
   // Parse YAML (anchors/aliases resolved automatically)
   const theme = yaml.load(yamlContent);
@@ -28,11 +28,8 @@ async function build() {
     fs.mkdirSync(THEME_DIR, { recursive: true });
   }
 
-  // Write JSON output
-  await fs.promises.writeFile(
-    OUTPUT_FILE,
-    JSON.stringify(theme, null, 2)
-  );
+  // Write VS Code JSON output
+  await fs.promises.writeFile(OUTPUT_FILE, JSON.stringify(theme, null, 2));
 
   console.log(`✓ Built: ${OUTPUT_FILE}`);
 }
