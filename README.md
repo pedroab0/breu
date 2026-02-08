@@ -58,6 +58,71 @@ git clone https://github.com/pedroab0/breu.git ~/.vscode-oss/extensions/pedroab0
 
 Restart your editor and select the theme.
 
+### Warp Terminal
+
+```bash
+mkdir -p ~/.warp/themes
+cp themes/breu-warp.yaml ~/.warp/themes/breu.yaml
+```
+
+Open Warp and go to **Settings > Appearance > Current Theme**, then select **Breu**.
+
+### Gemini CLI
+
+There are two ways to install the theme. See the [Gemini CLI custom themes docs](https://geminicli.com/docs/cli/themes/#custom-color-themes) for more details.
+
+#### Option 1: [Load from a file](https://geminicli.com/docs/cli/themes/#loading-themes-from-a-file)
+
+Copy the theme file to your home directory:
+
+```bash
+cp themes/breu-gemini.json ~/.gemini/
+```
+
+Then set the absolute path in `~/.gemini/settings.json`:
+
+```json
+{
+  "ui": {
+    "theme": "/Users/<your-username>/.gemini/breu-gemini.json"
+  }
+}
+```
+
+#### Option 2: [Define inline in settings](https://geminicli.com/docs/cli/themes/#how-to-define-a-custom-theme)
+
+Add the theme directly to your `~/.gemini/settings.json`:
+
+```json
+{
+  "ui": {
+    "theme": "Breu",
+    "customThemes": {
+      "Breu": {
+        "name": "Breu",
+        "type": "dark",
+        "Background": "#000000",
+        "Foreground": "#F8F8F2",
+        "LightBlue": "#5CB8FF",
+        "AccentBlue": "#179FFF",
+        "AccentPurple": "#BD93F9",
+        "AccentCyan": "#8BE9FD",
+        "AccentGreen": "#50FA7B",
+        "AccentYellow": "#F1FA8C",
+        "AccentRed": "#FF5555",
+        "Comment": "#6272A4",
+        "Gray": "#9DA5B4",
+        "DiffAdded": "#50FA7B",
+        "DiffRemoved": "#FF5555",
+        "GradientColors": ["#BD93F9", "#179FFF", "#8BE9FD"]
+      }
+    }
+  }
+}
+```
+
+You can also switch themes inside Gemini CLI using the `/theme` command.
+
 ## Color Palette
 
 | Color | Hex | Usage |
