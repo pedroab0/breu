@@ -1,0 +1,26 @@
+# Breu — A dark theme with pure black background
+# https://github.com/pedroab0/breu
+accent: "#179FFF"
+cursor: "#8BE9FD"
+background: "#000000"
+details: "darker"
+foreground: "#F8F8F2"
+terminal_colors:
+  normal:
+    black: "#21222C"
+    red: "#FF5555"
+    green: "#50FA7B"
+    yellow: "#F1FA8C"
+    blue: "#179FFF"
+    magenta: "#FF79C6"
+    cyan: "#8BE9FD"
+    white: "#F8F8F2"
+  bright:
+    black: "#6272A4"
+    red: "#FF6E6E"
+    green: "#69FF94"
+    yellow: "#FFFFA5"
+    blue: "#D6ACFF"
+    magenta: "#FF92DF"
+    cyan: "#A4FFFF"
+    white: "#FFFFFF"
