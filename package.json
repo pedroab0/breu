@@ -12,6 +12,8 @@
   "pricing": "Free",
   "scripts": {
     "build": "node ./scripts/build.js",
+    "build:warp": "node ./scripts/build-warp.js",
+    "build:gemini": "node ./scripts/build-gemini.js",
     "package": "vsce package",
     "vscode:prepublish": "npm run build"
   },
