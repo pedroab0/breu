@@ -5,6 +5,21 @@ All notable changes to the Breu theme will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2026-02-08
+
+### Added
+
+- Warp terminal theme with build script (`npm run build:warp`)
+- Gemini CLI theme with build script (`npm run build:gemini`)
+- New UI color tokens (`UI_BORDER`, `UI_BG_BADGE`, `UI_BG_BUTTON`, `UI_BG_INPUT`, `UI_BG_LIGHT`, `UI_BG_LIGHTER`, `UI_FG_BRIGHT`, `UI_FG_LIGHT`, `UI_FG_MUTED`, `UI_FG_DIM`, `UI_SELECTION`, `UI_GUIDE`, `UI_LIST_FOCUS`, `UI_LIST_HOVER`, `UI_ERROR_ALT`, `LINE_NUMBER`, `WARNING_GOLD`, `LIGHT_BLUE`, `BRACKET_2`, `BRACKET_3`)
+- Alpha transparency tokens (`YELLOW_20`, `GREEN_20`, `ORANGE_25`, `UI_SELECTION_50`, `UI_FG_MUTED_25`, `UI_FG_MUTED_15`, `DIFF_INSERTED_20`, `UI_PEEK_MATCH_50`, `UI_SCROLL_ACTIVE_50`, `UI_SCROLL_50`, `UI_SCROLL_HOVER_50`)
+
+### Changed
+
+- Tokenized all hardcoded hex values in `src/breu.yml` into YAML anchors for consistency and maintainability
+- Updated `THEME.md` to reference token names instead of raw hex values
+- Updated `README.md` with Warp and Gemini CLI installation instructions
+
 ## [1.0.3] - 2026-01-09
 
 ### Fixed
