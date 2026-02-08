@@ -47,12 +47,38 @@ breu:
 
   ui:
     - &UI_BORDER      '#181A1F'
+    - &UI_BG_BADGE    '#282C34'
+    - &UI_BG_BUTTON   '#404754'
+    - &UI_BG_INPUT    '#1D1F2B'
     - &UI_BG_LIGHT    '#21252B'
-    - &UI_BG_LIGHTER  '#2c313a'
-    - &UI_FG_MUTED    '#9da5b4'
+    - &UI_BG_LIGHTER  '#2C313A'
+    - &UI_FG_BRIGHT   '#F8FAFD'
+    - &UI_FG_LIGHT    '#D7DAE0'
+    - &UI_FG_MUTED    '#9DA5B4'
     - &UI_FG_DIM      '#6B717D'
+    - &UI_SELECTION   '#484E5B'
+    - &UI_GUIDE       '#3B404B'
+    - &UI_LIST_FOCUS  '#383E4A'
+    - &UI_LIST_HOVER  '#292D35'
+    - &UI_ERROR_ALT   '#C24038'
     - &LINE_NUMBER    '#495162'
     - &WARNING_GOLD   '#CCA700'
+    - &LIGHT_BLUE     '#5CB8FF'
+    - &BRACKET_2      '#DA70D6'
+    - &BRACKET_3      '#FFD700'
+
+  alpha:
+    - &YELLOW_20          '#F1FA8C33'
+    - &GREEN_20           '#50FA7B33'
+    - &ORANGE_25          '#FFB86C40'
+    - &UI_SELECTION_50    '#484E5B80'
+    - &UI_FG_MUTED_25    '#AAB1C040'
+    - &UI_FG_MUTED_15    '#AAB1C026'
+    - &DIFF_INSERTED_20  '#00809B33'
+    - &UI_PEEK_MATCH_50  '#29244B80'
+    - &UI_SCROLL_ACTIVE_50 '#747D9180'
+    - &UI_SCROLL_50        '#4E566680'
+    - &UI_SCROLL_HOVER_50  '#5A637580'
 
 # =============================================================================
 # Semantic Token Colors
@@ -78,21 +104,21 @@ semanticTokenColors:
 colors:
   # Activity Bar
   activityBar.background: *BG
-  activityBar.foreground: '#D7DAE0'
+  activityBar.foreground: *UI_FG_LIGHT
   activityBarBadge.background: *BLUE
-  activityBarBadge.foreground: '#F8FAFD'
+  activityBarBadge.foreground: *UI_FG_BRIGHT
 
   # Badge
-  badge.background: '#282c34'
+  badge.background: *UI_BG_BADGE
 
   # Button
-  button.background: '#404754'
+  button.background: *UI_BG_BUTTON
 
   # Debug
   debugToolBar.background: *BG
   debugToolBar.border: *ANSI_BLACK
   debugIcon.breakpointForeground: *RED
-  debugIcon.breakpointDisabledForeground: '#404754'
+  debugIcon.breakpointDisabledForeground: *UI_BG_BUTTON
   debugIcon.breakpointUnverifiedForeground: *ORANGE
   debugIcon.startForeground: *GREEN
   debugIcon.pauseForeground: *YELLOW
@@ -108,11 +134,11 @@ colors:
   debugConsole.errorForeground: *RED
   debugConsole.sourceForeground: *PURPLE
   debugConsoleInputIcon.foreground: *PURPLE
-  editor.stackFrameHighlightBackground: '#F1FA8C33'
-  editor.focusedStackFrameHighlightBackground: '#50FA7B33'
+  editor.stackFrameHighlightBackground: *YELLOW_20
+  editor.focusedStackFrameHighlightBackground: *GREEN_20
 
   # Diff Editor
-  diffEditor.insertedTextBackground: '#00809B33'
+  diffEditor.insertedTextBackground: *DIFF_INSERTED_20
 
   # Dropdown
   dropdown.background: *BG
@@ -120,12 +146,12 @@ colors:
 
   # Editor
   editor.background: *BG
-  editor.findMatchHighlightBackground: '#FFB86C40'
+  editor.findMatchHighlightBackground: *ORANGE_25
   editor.lineHighlightBackground: *BG
-  editor.selectionBackground: '#484e5b'
-  editor.selectionHighlightBackground: '#484e5b80'
-  editor.wordHighlightBackground: '#484e5b80'
-  editor.wordHighlightStrongBackground: '#AAB1C040'
+  editor.selectionBackground: *UI_SELECTION
+  editor.selectionHighlightBackground: *UI_SELECTION_50
+  editor.wordHighlightBackground: *UI_SELECTION_50
+  editor.wordHighlightStrongBackground: *UI_FG_MUTED_25
 
   # Editor Cursor
   editorCursor.foreground: *CYAN
@@ -136,9 +162,9 @@ colors:
   editorInfo.foreground: *BLUE
 
   # Bracket Highlighting
-  editorBracketHighlight.foreground1: '#179fff'
-  editorBracketHighlight.foreground2: '#da70d6'
-  editorBracketHighlight.foreground3: '#ffd700'
+  editorBracketHighlight.foreground1: *BLUE
+  editorBracketHighlight.foreground2: *BRACKET_2
+  editorBracketHighlight.foreground3: *BRACKET_3
 
   # Editor Groups
   editorGroup.border: *UI_BORDER
@@ -155,7 +181,7 @@ colors:
   editorHoverWidget.statusBarBackground: *BG
 
   # Editor Indent Guide
-  editorIndentGuide.background1: '#3B4048'
+  editorIndentGuide.background1: *UI_GUIDE
 
   # Editor Line Numbers
   editorLineNumber.foreground: *LINE_NUMBER
@@ -167,7 +193,7 @@ colors:
   editorMarkerNavigation.background: *UI_BG_LIGHT
 
   # Editor Ruler
-  editorRuler.foreground: '#AAB1C026'
+  editorRuler.foreground: *UI_FG_MUTED_15
 
   # Editor Suggest Widget
   editorSuggestWidget.background: *BG
@@ -176,7 +202,7 @@ colors:
   editorSuggestWidget.selectedBackground: *UI_BG_LIGHTER
 
   # Editor Whitespace
-  editorWhitespace.foreground: '#3B4048'
+  editorWhitespace.foreground: *UI_GUIDE
 
   # Editor Widget
   editorWidget.background: *UI_BG_LIGHT
@@ -190,20 +216,20 @@ colors:
   gitDecoration.modifiedResourceForeground: *ORANGE
 
   # Input
-  input.background: '#1d1f23'
+  input.background: *UI_BG_INPUT
 
   # Lists
   list.activeSelectionBackground: *UI_BG_LIGHTER
-  list.activeSelectionForeground: '#d7dae0'
-  list.focusBackground: '#383E4A'
+  list.activeSelectionForeground: *UI_FG_LIGHT
+  list.focusBackground: *UI_LIST_FOCUS
   list.highlightForeground: *CYAN
-  list.hoverBackground: '#292d35'
+  list.hoverBackground: *UI_LIST_HOVER
   list.inactiveSelectionBackground: *UI_BG_LIGHTER
-  list.inactiveSelectionForeground: '#d7dae0'
+  list.inactiveSelectionForeground: *UI_FG_LIGHT
 
   # List Filter Widget
   listFilterWidget.background: *BG
-  listFilterWidget.noMatchesOutline: '#c24038'
+  listFilterWidget.noMatchesOutline: *UI_ERROR_ALT
   listFilterWidget.outline: *CYAN
 
   # Minimap
@@ -212,25 +238,25 @@ colors:
   # Notifications
   notificationLink.foreground: *CYAN
   notifications.background: *UI_BG_LIGHT
-  notifications.foreground: '#d7dae0'
+  notifications.foreground: *UI_FG_LIGHT
   notifications.border: *UI_BORDER
   notificationCenterHeader.background: *BG
-  notificationCenterHeader.foreground: '#d7dae0'
+  notificationCenterHeader.foreground: *UI_FG_LIGHT
   notificationsInfoIcon.foreground: *BLUE
   notificationsWarningIcon.foreground: *ORANGE
   notificationsErrorIcon.foreground: *RED
   notificationToast.border: *UI_BORDER
 
   # Peek View
-  peekViewEditor.matchHighlightBackground: '#29244b80'
+  peekViewEditor.matchHighlightBackground: *UI_PEEK_MATCH_50
 
   # Picker Group
   pickerGroup.foreground: *CYAN
 
   # Scrollbar
-  scrollbarSlider.activeBackground: '#747D9180'
-  scrollbarSlider.background: '#4E566680'
-  scrollbarSlider.hoverBackground: '#5A637580'
+  scrollbarSlider.activeBackground: *UI_SCROLL_ACTIVE_50
+  scrollbarSlider.background: *UI_SCROLL_50
+  scrollbarSlider.hoverBackground: *UI_SCROLL_HOVER_50
 
   # Sidebar
   sideBar.background: *BG
