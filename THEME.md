@@ -1,6 +1,6 @@
 # Breu Theme Documentation
 
-A dark VS Code theme with a pure black background and carefully curated color palette.
+A dark VS Code theme with a pure black background and carefully curated color palette. Also available for Warp terminal and Gemini CLI.
 
 ## Color Palette
 
@@ -37,113 +37,113 @@ breu-color-theme.json
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `activityBar.background` | `#000000` | Sidebar background |
-| `activityBar.foreground` | `#D7DAE0` | Icon color |
-| `activityBarBadge.background` | `#179FFF` | Badge background |
-| `activityBarBadge.foreground` | `#F8FAFD` | Badge text |
+| `activityBar.background` | `*BG` | Sidebar background |
+| `activityBar.foreground` | `*UI_FG_LIGHT` | Icon color |
+| `activityBarBadge.background` | `*BLUE` | Badge background |
+| `activityBarBadge.foreground` | `*UI_FG_BRIGHT` | Badge text |
 
 ### Editor
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `editor.background` | `#000000` | Editor background |
-| `editor.findMatchHighlightBackground` | `#FFB86C40` | Search match highlight |
-| `editor.lineHighlightBackground` | `#000000` | Current line highlight |
-| `editor.selectionBackground` | `#484e5b` | Selected text background |
-| `editor.selectionHighlightBackground` | `#484e5b80` | Other occurrences |
-| `editor.wordHighlightBackground` | `#484e5b80` | Word highlight |
-| `editor.wordHighlightStrongBackground` | `#AAB1C040` | Strong word highlight |
+| `editor.background` | `*BG` | Editor background |
+| `editor.findMatchHighlightBackground` | `*ORANGE_25` | Search match highlight |
+| `editor.lineHighlightBackground` | `*BG` | Current line highlight |
+| `editor.selectionBackground` | `*UI_SELECTION` | Selected text background |
+| `editor.selectionHighlightBackground` | `*UI_SELECTION_50` | Other occurrences |
+| `editor.wordHighlightBackground` | `*UI_SELECTION_50` | Word highlight |
+| `editor.wordHighlightStrongBackground` | `*UI_FG_MUTED_25` | Strong word highlight |
 
 ### Editor Cursor & Indicators
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `editorCursor.foreground` | `#8BE9FD` | Cursor color (cyan) |
-| `editorError.foreground` | `#FF5555` | Error underline (red) |
-| `editorWarning.foreground` | `#CCA700` | Warning underline (gold) |
-| `editorInfo.foreground` | `#179FFF` | Info underline (blue) |
+| `editorCursor.foreground` | `*CYAN` | Cursor color |
+| `editorError.foreground` | `*RED` | Error underline |
+| `editorWarning.foreground` | `*WARNING_GOLD` | Warning underline |
+| `editorInfo.foreground` | `*BLUE` | Info underline |
 
 ### Bracket Highlighting
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `editorBracketHighlight.foreground1` | `#179fff` | Level 1 - Blue |
-| `editorBracketHighlight.foreground2` | `#da70d6` | Level 2 - Pink |
-| `editorBracketHighlight.foreground3` | `#ffd700` | Level 3 - Gold |
+| `editorBracketHighlight.foreground1` | `*BLUE` | Level 1 - Blue |
+| `editorBracketHighlight.foreground2` | `*BRACKET_2` | Level 2 - Orchid |
+| `editorBracketHighlight.foreground3` | `*BRACKET_3` | Level 3 - Gold |
 
 ### Editor Widgets
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `editorHoverWidget.background` | `#000000` | Hover popup background |
-| `editorHoverWidget.border` | `#181A1F` | Hover popup border |
-| `editorSuggestWidget.background` | `#000000` | Autocomplete background |
-| `editorSuggestWidget.border` | `#181A1F` | Autocomplete border |
-| `editorSuggestWidget.highlightForeground` | `#8BE9FD` | Match highlight |
-| `editorSuggestWidget.selectedBackground` | `#2c313a` | Selected item |
+| `editorHoverWidget.background` | `*BG` | Hover popup background |
+| `editorHoverWidget.border` | `*UI_BORDER` | Hover popup border |
+| `editorSuggestWidget.background` | `*BG` | Autocomplete background |
+| `editorSuggestWidget.border` | `*UI_BORDER` | Autocomplete border |
+| `editorSuggestWidget.highlightForeground` | `*CYAN` | Match highlight |
+| `editorSuggestWidget.selectedBackground` | `*UI_BG_LIGHTER` | Selected item |
 
 ### Git Decorations
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `gitDecoration.modifiedResourceForeground` | `#FFB86C` | Modified files (orange) |
-| `editorGutter.modifiedBackground` | `#FFB86C` | Gutter modified indicator |
-| `minimapGutter.modifiedBackground` | `#FFB86C` | Minimap modified indicator |
+| `gitDecoration.modifiedResourceForeground` | `*ORANGE` | Modified files |
+| `editorGutter.modifiedBackground` | `*ORANGE` | Gutter modified indicator |
+| `minimapGutter.modifiedBackground` | `*ORANGE` | Minimap modified indicator |
 
 ### Lists
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `list.activeSelectionBackground` | `#2c313a` | Selected item background |
-| `list.activeSelectionForeground` | `#d7dae0` | Selected item text |
-| `list.focusBackground` | `#383E4A` | Focused item background |
-| `list.highlightForeground` | `#8BE9FD` | Match highlight (cyan) |
-| `list.hoverBackground` | `#292d35` | Hover background |
+| `list.activeSelectionBackground` | `*UI_BG_LIGHTER` | Selected item background |
+| `list.activeSelectionForeground` | `*UI_FG_LIGHT` | Selected item text |
+| `list.focusBackground` | `*UI_LIST_FOCUS` | Focused item background |
+| `list.highlightForeground` | `*CYAN` | Match highlight |
+| `list.hoverBackground` | `*UI_LIST_HOVER` | Hover background |
 
 ### Notifications
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `notifications.background` | `#21252b` | Notification background |
-| `notifications.foreground` | `#d7dae0` | Notification text |
-| `notificationsInfoIcon.foreground` | `#179FFF` | Info icon (blue) |
-| `notificationsWarningIcon.foreground` | `#FFB86C` | Warning icon (orange) |
-| `notificationsErrorIcon.foreground` | `#FF5555` | Error icon (red) |
+| `notifications.background` | `*UI_BG_LIGHT` | Notification background |
+| `notifications.foreground` | `*UI_FG_LIGHT` | Notification text |
+| `notificationsInfoIcon.foreground` | `*BLUE` | Info icon |
+| `notificationsWarningIcon.foreground` | `*ORANGE` | Warning icon |
+| `notificationsErrorIcon.foreground` | `*RED` | Error icon |
 
 ### Sidebar & Status Bar
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `sideBar.background` | `#000000` | Sidebar background |
-| `sideBarSectionHeader.background` | `#000000` | Section header background |
-| `statusBar.background` | `#000000` | Status bar background |
-| `statusBar.foreground` | `#9da5b4` | Status bar text |
-| `statusBarItem.remoteBackground` | `#000000` | Remote indicator background |
-| `statusBarItem.remoteForeground` | `#8BE9FD` | Remote indicator text (cyan) |
+| `sideBar.background` | `*BG` | Sidebar background |
+| `sideBarSectionHeader.background` | `*BG` | Section header background |
+| `statusBar.background` | `*BG` | Status bar background |
+| `statusBar.foreground` | `*UI_FG_MUTED` | Status bar text |
+| `statusBarItem.remoteBackground` | `*BG` | Remote indicator background |
+| `statusBarItem.remoteForeground` | `*CYAN` | Remote indicator text |
 
 ### Tabs & Title Bar
 
 | Key | Value | Description |
 |-----|-------|-------------|
-| `tab.activeBackground` | `#000000` | Active tab background |
-| `tab.inactiveBackground` | `#000000` | Inactive tab background |
-| `tab.border` | `#000000` | Tab border |
-| `titleBar.activeBackground` | `#000000` | Title bar background |
+| `tab.activeBackground` | `*BG` | Active tab background |
+| `tab.inactiveBackground` | `*BG` | Inactive tab background |
+| `tab.border` | `*BG` | Tab border |
+| `titleBar.activeBackground` | `*BG` | Title bar background |
 
 ### Terminal
 
 | Key | Value | Description |
 |-----|-------|--------------|
-| `terminal.background` | `#000000` | Background |
-| `terminal.foreground` | `#F8F8F2` | Default text |
-| `terminal.ansiBlack` | `#21222C` | Black |
-| `terminal.ansiRed` | `#FF5555` | Red |
-| `terminal.ansiGreen` | `#50FA7B` | Green |
-| `terminal.ansiYellow` | `#F1FA8C` | Yellow |
-| `terminal.ansiBlue` | `#BD93F9` | Blue (purple) |
-| `terminal.ansiMagenta` | `#FF79C6` | Magenta |
-| `terminal.ansiCyan` | `#8BE9FD` | Cyan |
-| `terminal.ansiWhite` | `#F8F8F2` | White |
+| `terminal.background` | `*BG` | Background |
+| `terminal.foreground` | `*FG` | Default text |
+| `terminal.ansiBlack` | `*ANSI_BLACK` | Black |
+| `terminal.ansiRed` | `*ANSI_RED` | Red |
+| `terminal.ansiGreen` | `*ANSI_GREEN` | Green |
+| `terminal.ansiYellow` | `*ANSI_YELLOW` | Yellow |
+| `terminal.ansiBlue` | `*ANSI_BLUE` | Blue (purple) |
+| `terminal.ansiMagenta` | `*ANSI_MAGENTA` | Magenta |
+| `terminal.ansiCyan` | `*ANSI_CYAN` | Cyan |
+| `terminal.ansiWhite` | `*ANSI_WHITE` | White |
 
 ---
 
