@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breu Theme HTML Test</title>
+
+    <link rel="stylesheet" href="style_test.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        :root {
+            --main-bg: #f0f0f0;
+            --text-color: #333;
+        }
+
+        body {
+            background-color: var(--main-bg);
+            color: var(--text-color);
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="site-header">
+        <nav role="navigation" aria-label="Main Navigation">
+            <div class="logo">Breu Theme</div>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" data-type="modal">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="hero">
+            <h1>Welcome to <span style="color: #bd93f9;">Breu</span></h1>
+            <p class="lead">A dark theme for <strong>VS Code</strong>.</p>
+            <button onclick="alert('Hello!')" type="button" disabled>Get Started</button>
+        </section>
+
+        <article class="post">
+            <header>
+                <h2>Understanding Syntax Highlighting</h2>
+                <div class="meta">
+                    <time datetime="2023-10-27">October 27, 2023</time> by <a href="/author/pedro">Pedro</a>
+                </div>
+            </header>
+
+            <p>HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
+
+            <blockquote>
+                <p>The web is a place for everyone.</p>
+            </blockquote>
+
+            <h3>Lists</h3>
+            <ul>
+                <li>Unordered Item 1</li>
+                <li>Unordered Item 2</li>
+            </ul>
+
+            <ol>
+                <li>Ordered Item 1</li>
+                <li>Ordered Item 2</li>
+            </ol>
+
+            <h3>Form Elements</h3>
+            <form action="/submit" method="POST">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" rows="4"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="subscribe" name="subscribe" checked>
+                    <label for="subscribe">Subscribe to newsletter</label>
+                </div>
+
+                <input type="hidden" name="token" value="abc123xyz">
+            </form>
+
+            <h3>Code Block</h3>
+            <pre><code>
+function sayHello(name) {
+    console.log(`Hello, ${name}!`);
+}
+            </code></pre>
+
+            <h3>Table</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Project A</td>
+                        <td>Active</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <details>
+            <summary>More Info</summary>
+            <p>Hidden content revealed upon click.</p>
+        </details>
+
+        <figure>
+            <img src="assets/image.jpg" alt="Description of image" width="300" height="200">
+            <figcaption>Fig.1 - A placeholder image.</figcaption>
+        </figure>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Breu Theme. All rights reserved.</p>
+        <p>
+            <small>Built with ❤️</small>
+        </p>
+    </footer>
+
+    <script type="text/javascript">
+        const config = {
+            theme: 'dark',
+            version: 1.0
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Page loaded');
+
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    console.log('Button clicked');
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

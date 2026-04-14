@@ -1,0 +1,137 @@
+$primary-color: #3bbfce;
+$secondary-color: #2c3e50;
+$margin: 16px;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+$breakpoints: (
+  'small': 576px,
+  'medium': 768px,
+  'large': 992px,
+  'xlarge': 1200px
+);
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin theme($text-color, $bg-color) {
+  color: $text-color;
+  background-color: $bg-color;
+  border: 1px solid darken($bg-color, 10%);
+}
+
+@function calculate-width($n) {
+  @return $n * 100% / 12;
+}
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+body {
+  font-family: $font-stack;
+  margin: 0;
+  padding: 0;
+  background-color: lighten($secondary-color, 60%);
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { 
+    display: inline-block; 
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+    
+    &.active {
+      font-weight: bold;
+    }
+    
+    &::after {
+      content: " »";
+      opacity: 0.5;
+    }
+  }
+}
+
+#main-content {
+  @include flex-center;
+  padding: $margin * 2;
+  
+  .card {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    &__title {
+      font-size: 1.5rem;
+      color: $secondary-color;
+    }
+    
+    &__body {
+      p {
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.message {
+  @extend %message-shared;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  @extend %message-shared;
+  border-color: red;
+}
+
+.sidebar {
+  width: 300px;
+  
+  @media (max-width: map-get($breakpoints, 'medium')) {
+    width: 100%;
+    display: none;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.anim-element {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  @include theme(white, $primary-color);
+}
