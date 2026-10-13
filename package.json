@@ -11,7 +11,7 @@
   "license": "MIT",
   "pricing": "Free",
   "bin": {
-    "breu": "./bin/breu.js"
+    "breu": "bin/breu.js"
   },
   "scripts": {
     "build": "node ./scripts/build.js && npm run build:warp && npm run build:gemini && npm run build:zsh && npm run build:zsh-syntax && npm run build:opencode",
@@ -22,18 +22,24 @@
     "build:opencode": "node ./scripts/build-opencode.js",
     "install:theme": "node ./bin/breu.js",
     "package": "vsce package",
-    "vscode:prepublish": "npm run build"
+    "vscode:prepublish": "npm run build",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "bin",
+    "themes"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedroab0/breu.git"
+    "url": "git+https://github.com/pedroab0/breu.git"
   },
   "bugs": {
     "url": "https://github.com/pedroab0/breu/issues"
   },
   "homepage": "https://github.com/pedroab0/breu",
   "engines": {
-    "vscode": "^1.60.0"
+    "vscode": "^1.60.0",
+    "node": ">=16.0.0"
   },
   "categories": [
     "Themes"
