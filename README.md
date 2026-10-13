@@ -31,7 +31,7 @@ Explore additional language examples at [VS Code Themes](https://vscodethemes.co
 Install Breu interactively across any of your tools with a single command:
 
 ```bash
-npx breu
+npx @pedroab0/breu
 ```
 
 The interactive menu detects your installed tools and lets you choose which ones to configure:
@@ -50,8 +50,8 @@ The interactive menu detects your installed tools and lets you choose which ones
 You can also run non-interactively:
 
 ```bash
-npx breu --all           # Install to all detected tools
-npx breu --tools=warp,zsh # Install to specific tools
+npx @pedroab0/breu --all           # Install to all detected tools
+npx @pedroab0/breu --tools=warp,zsh # Install to specific tools
 ```
 
 ### VS Code Marketplace

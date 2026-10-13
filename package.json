@@ -23,12 +23,9 @@
     "install:theme": "node ./bin/breu.js",
     "package": "vsce package",
     "vscode:prepublish": "npm run build",
+    "publish:npm": "node ./scripts/publish-npm.js",
     "prepublishOnly": "npm run build"
   },
-  "files": [
-    "bin",
-    "themes"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pedroab0/breu.git"

@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Interactive CLI theme installer via NPX (`bin/breu.js` / `npx breu`) supporting selective tool configuration
+- Interactive CLI theme installer via NPX (`bin/breu.js` / `npx @pedroab0/breu`) supporting selective tool configuration
 - Zsh prompt theme with git status indicators (`npm run build:zsh` → `themes/breu.zsh-theme`)
 - Zsh syntax highlighting configuration (`npm run build:zsh-syntax` → `themes/breu-zsh-syntax.zsh`)
 - OpenCode theme (`npm run build:opencode` → `themes/breu-opencode.json`)

@@ -39,11 +39,11 @@ ${C_BOLD}${C_CYAN}Breu Theme Installer${C_RESET}
 ${C_DIM}A dark theme with pure black background (#000000)${C_RESET}
 
 ${C_BOLD}Usage:${C_RESET}
-  npx breu                 ${C_GRAY}Interactive menu to choose tools${C_RESET}
-  npx breu --all           ${C_GRAY}Install to all detected tools without prompting${C_RESET}
-  npx breu --tools=warp,zsh ${C_GRAY}Install to specific tools${C_RESET}
-  npx breu --dry-run       ${C_GRAY}Simulate installation without writing files${C_RESET}
-  npx breu --help          ${C_GRAY}Show this help message${C_RESET}
+  npx @pedroab0/breu                 ${C_GRAY}Interactive menu to choose tools${C_RESET}
+  npx @pedroab0/breu --all           ${C_GRAY}Install to all detected tools without prompting${C_RESET}
+  npx @pedroab0/breu --tools=warp,zsh ${C_GRAY}Install to specific tools${C_RESET}
+  npx @pedroab0/breu --dry-run       ${C_GRAY}Simulate installation without writing files${C_RESET}
+  npx @pedroab0/breu --help          ${C_GRAY}Show this help message${C_RESET}
 
 ${C_BOLD}Available Tools:${C_RESET}
   vscode, warp, zsh, gemini, opencode
@@ -300,7 +300,7 @@ async function run() {
     selected = items.filter(i => i.checked);
     if (selected.length === 0) {
       console.log(`${C_YELLOW}! No tools selected or detected.${C_RESET}`);
-      console.log(`Run ${C_BOLD}npx breu --help${C_RESET} or run without flags to select interactively.\n`);
+      console.log(`Run ${C_BOLD}npx @pedroab0/breu --help${C_RESET} or run without flags to select interactively.\n`);
       process.exit(0);
     }
   } else {

@@ -1,0 +1,19 @@
+# Source & scripts
+src/
+scripts/
+
+# Examples & docs
+examples/
+docs/
+THEME.md
+AGENTS.md
+
+# CI / Tooling
+.github/
+.vscode/
+.vscodeignore
+.gitattributes
+
+# Assets & build outputs
+assets/
+*.vsix
