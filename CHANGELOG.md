@@ -5,6 +5,23 @@ All notable changes to the Breu theme will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-10-12
+
+### Added
+
+- Interactive CLI theme installer via NPX (`bin/breu.js` / `npx breu`) supporting selective tool configuration
+- Zsh prompt theme with git status indicators (`npm run build:zsh` → `themes/breu.zsh-theme`)
+- Zsh syntax highlighting configuration (`npm run build:zsh-syntax` → `themes/breu-zsh-syntax.zsh`)
+- OpenCode theme (`npm run build:opencode` → `themes/breu-opencode.json`)
+- Multi-target build pipeline compiling all 6 themes sequentially (`npm run build`)
+
+### Changed
+
+- Updated `README.md` with Quick Install via NPX, OpenCode, and Zsh installation instructions
+- Added uniform "Building from source" sections across Warp, Zsh, Gemini CLI, and OpenCode
+- Updated `THEME.md` with Zsh and OpenCode palette mappings
+- Updated developer, publishing, and contributing documentation
+
 ## [1.0.4] - 2026-02-08
 
 ### Added

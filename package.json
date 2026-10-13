@@ -2,7 +2,7 @@
   "name": "breu",
   "displayName": "Breu",
   "description": "A dark theme with pure black background.",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "publisher": "pedroab0",
   "author": {
     "name": "Pedro Barbosa",
@@ -13,10 +13,6 @@
   "bin": {
     "breu": "./bin/breu.js"
   },
-  "files": [
-    "bin",
-    "themes"
-  ],
   "scripts": {
     "build": "node ./scripts/build.js && npm run build:warp && npm run build:gemini && npm run build:zsh && npm run build:zsh-syntax && npm run build:opencode",
     "build:warp": "node ./scripts/build-warp.js",
