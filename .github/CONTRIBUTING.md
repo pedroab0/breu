@@ -17,18 +17,41 @@ Thanks for your interest in contributing to Breu!
 
 ## Making Changes
 
-### Theme File
+### Theme Source File
 
-The main theme definition is in `themes/breu-color-theme.json`:
+The single source of truth is `src/breu.yml` — **never edit files in `themes/` directly**, as they are automatically generated:
 
+- **`breu.base` / `breu.ui` / `breu.alpha`** - Named color anchors
 - **`colors`** - UI colors (editor, sidebar, terminal, etc.)
 - **`tokenColors`** - Syntax highlighting rules
+- **`semanticTokenColors`** - Semantic token rules
+
+### Building Themes
+
+After editing `src/breu.yml`, you can regenerate all theme targets:
+
+```bash
+npm run build
+```
+
+This compiles all targets into `themes/` (VS Code, Warp, Gemini CLI, Zsh prompt, Zsh syntax highlighting, and OpenCode).
+
+Or build specific targets if you are working on a particular tool:
+
+```bash
+npm run build:warp       # Warp terminal theme
+npm run build:gemini     # Gemini CLI theme
+npm run build:zsh        # Zsh prompt theme
+npm run build:zsh-syntax # Zsh syntax config
+npm run build:opencode   # OpenCode theme
+```
 
 ### Testing Changes
 
-1. Make your changes to `breu-color-theme.json`
-2. In the Extension Development Host, run `Developer: Reload Window`
+1. Edit `src/breu.yml` and run `npm run build` (or your target-specific build command)
+2. In the Extension Development Host (`F5`), run `Developer: Reload Window` (`Cmd+Shift+P`)
 3. Use `Developer: Inspect Editor Tokens and Scopes` to debug token colors
+4. Use sample files in `examples/` to visually verify syntax coverage
 
 ### Color Palette
 

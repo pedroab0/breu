@@ -147,6 +147,52 @@ breu-color-theme.json
 
 ---
 
+## Zsh Theme (`breu.zsh-theme`)
+
+The Zsh theme uses TrueColor (`%F{#RRGGBB}`) to match the palette exactly.
+
+| Element | Color | Description |
+|---------|-------|-------------|
+| Current Directory | `*CYAN` | `%~` in the prompt |
+| Git Branch | `*PINK` | Branch name in brackets |
+| Success Indicator | `*GREEN` | `➜` when last command succeeded |
+| Error Indicator | `*RED` | `➜` when last command failed |
+
+---
+
+## OpenCode Theme (`breu-opencode.json`)
+
+The OpenCode theme maps the Breu color palette to OpenCode's semantic UI, diff, and syntax tokens:
+
+### Core UI
+
+| OpenCode Key | Breu Anchor | Description |
+|---|---|---|
+| `primary` | `*BLUE` | Primary accent for commands and active elements |
+| `secondary` | `*PINK` | Secondary accent for tags, types, and badges |
+| `accent` | `*CYAN` | Interactive highlights and cursor |
+| `text` | `*FG` | Primary text |
+| `textMuted` | `*UI_FG_MUTED` | Secondary text |
+| `background` | `none` | Inherits terminal background (OLED true black) |
+| `backgroundPanel` | `transparent` | Transparent panel surfaces |
+| `backgroundElement` | `*UI_SELECTION_50` | Dropdowns, menus, and item backgrounds |
+| `border` | `*UI_BORDER` | Default borders |
+| `borderActive` | `*UI_SELECTION` | Active focus borders |
+| `borderSubtle` | `*UI_GUIDE` | Subtle dividers and guides |
+
+### Diff View
+
+| OpenCode Key | Breu Anchor | Description |
+|---|---|---|
+| `diffAdded` | `*GREEN` | Added text foreground |
+| `diffRemoved` | `*RED` | Removed text foreground |
+| `diffContext` / `diffHunkHeader` | `*COMMENT` | Context lines and hunk headers |
+| `diffAddedBg` | `#001A0D` | Dark green background for added lines |
+| `diffRemovedBg` | `#1A0000` | Dark red background for removed lines |
+| `diffLineNumber` | `*LINE_NUMBER` | Gutter line numbers |
+
+---
+
 ## Token Colors (`tokenColors`)
 
 ### Text & Markup

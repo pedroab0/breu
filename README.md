@@ -7,9 +7,7 @@
 A dark theme for Visual Studio Code with a true `#000000` black background.
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=pedroab0.breu"><img src="https://img.shields.io/open-vsx/dt/pedroab0/breu?style=for-the-badge&label=Open%20VSX%20Downloads&color=%238BE9FD" alt="Open VSX Downloads"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=pedroab0.breu"><img src="https://img.shields.io/visual-studio-marketplace/d/pedroab0.breu?style=for-the-badge&label=VS%20Code%20Downloads&color=%238BE9FD" alt="VS Code Downloads"></a>
-  <a href="https://open-vsx.org/extension/pedroab0/breu"><img src="https://img.shields.io/visual-studio-marketplace/i/pedroab0.breu?style=for-the-badge&label=VS%20Code%20Installs&color=%238BE9FD" alt="VS Code Installs"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=pedroab0.breu"><img src="https://img.shields.io/open-vsx/dt/pedroab0/breu?style=for-the-badge&label=Open%20VSX%20Downloads&color=%238BE9FD" alt="Open VSX Downloads" />
 </p>
 
 ## Screenshots
@@ -27,6 +25,34 @@ A dark theme for Visual Studio Code with a true `#000000` black background.
 Explore additional language examples at [VS Code Themes](https://vscodethemes.com/e/pedroab0.breu/breu).
 
 ## Installation
+
+### Quick Install (NPX)
+
+Install Breu interactively across any of your tools with a single command:
+
+```bash
+npx breu
+```
+
+The interactive menu detects your installed tools and lets you choose which ones to configure:
+
+```text
+? Which tools would you like to install Breu for?
+  (Use ↑/↓ to navigate, Space to toggle, 'a' to toggle all, Enter to confirm)
+
+❯ [✔] VS Code / VSCodium (code CLI detected)
+  [✔] Warp Terminal (~/.warp detected)
+  [✔] Zsh (Prompt & Syntax Highlighting) (~/.zshrc detected)
+  [✔] Gemini CLI (~/.gemini detected)
+  [ ] OpenCode (not detected)
+```
+
+You can also run non-interactively:
+
+```bash
+npx breu --all           # Install to all detected tools
+npx breu --tools=warp,zsh # Install to specific tools
+```
 
 ### VS Code Marketplace
 
@@ -66,6 +92,63 @@ cp themes/breu-warp.yaml ~/.warp/themes/breu.yaml
 ```
 
 Open Warp and go to **Settings > Appearance > Current Theme**, then select **Breu**.
+
+#### Building from source
+
+```bash
+npm run build:warp
+# output: themes/breu-warp.yaml
+```
+
+### Zsh Theme
+
+The Zsh theme features a clean prompt with directory info, git status, and a success/failure indicator.
+
+#### Option 1: Manual installation
+
+1. Copy the theme file to your home directory:
+   ```bash
+   cp themes/breu.zsh-theme ~/.breu.zsh-theme
+   ```
+2. Source it in your `~/.zshrc`:
+   ```bash
+   source ~/.breu.zsh-theme
+   ```
+
+#### Option 2: Oh My Zsh
+
+1. Copy the theme to the custom themes directory:
+   ```bash
+   mkdir -p ~/.oh-my-zsh/custom/themes
+   cp themes/breu.zsh-theme ~/.oh-my-zsh/custom/themes/breu.zsh-theme
+   ```
+2. Set the theme in your `~/.zshrc`:
+   ```zsh
+   ZSH_THEME="breu"
+   ```
+
+#### Syntax Highlighting (Optional)
+
+If you have [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) installed, you can apply the Breu palette to it:
+
+1. Copy the syntax theme to your home directory:
+   ```bash
+   cp themes/breu-zsh-syntax.zsh ~/.breu-zsh-syntax.zsh
+   ```
+2. Source it in your `~/.zshrc` *after* the plugin is loaded:
+   ```bash
+   source ~/.breu-zsh-syntax.zsh
+   ```
+
+#### Building from source
+
+```bash
+npm run build:zsh
+# output: themes/breu.zsh-theme
+
+npm run build:zsh-syntax
+# output: themes/breu-zsh-syntax.zsh
+```
 
 ### Gemini CLI
 
@@ -123,6 +206,61 @@ Add the theme directly to your `~/.gemini/settings.json`:
 
 You can also switch themes inside Gemini CLI using the `/theme` command.
 
+#### Building from source
+
+```bash
+npm run build:gemini
+# output: themes/breu-gemini.json
+```
+
+### OpenCode
+
+[OpenCode](https://opencode.ai) is an AI-powered terminal coding assistant. Breu ships a ready-made theme file that matches the color palette exactly.
+
+#### Requirements
+
+Your terminal must support **truecolor** (24-bit color).
+
+```bash
+echo $COLORTERM   # should print: truecolor
+```
+
+If it does not, add `export COLORTERM=truecolor` to your shell profile.
+
+#### Installation
+
+**Option A — User-wide (applies to every project)**
+
+```bash
+mkdir -p ~/.config/opencode/themes
+cp themes/breu-opencode.json ~/.config/opencode/themes/breu.json
+```
+
+**Option B — Project-specific**
+
+```bash
+mkdir -p .opencode/themes
+cp themes/breu-opencode.json .opencode/themes/breu.json
+```
+
+#### Activation
+
+Either run the `/theme` command inside OpenCode and select **breu**, or set it in your configuration file (`~/.config/opencode/opencode.json` or `.opencode/opencode.json`):
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "breu"
+}
+```
+
+#### Building from source
+
+```bash
+npm run build:opencode
+# output: themes/breu-opencode.json
+```
+
 ## Color Palette
 
 | Color | Hex | Usage |
@@ -142,6 +280,7 @@ You can also switch themes inside Gemini CLI using the `/theme` command.
 ## Features
 
 - True black (`#000000`) background for OLED displays
+- Multi-platform themes (VS Code, Warp, Gemini CLI, Zsh, OpenCode)
 - Full terminal ANSI color support
 - Semantic highlighting enabled
 - Comprehensive syntax highlighting for 15+ languages
