@@ -1,6 +1,6 @@
 # Breu Theme Documentation
 
-A dark VS Code theme with a pure black background and carefully curated color palette. Also available for Warp terminal and Gemini CLI.
+A dark theme with a pure `#000000` black background and carefully curated color palette. Available for Visual Studio Code, Warp terminal, Zsh (prompt & syntax highlighting), Gemini CLI, and OpenCode. Can be installed across tools with a single command via NPX (`npx @pedroab0/breu`).
 
 ## Color Palette
 
