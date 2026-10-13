@@ -8,3 +8,5 @@ docs/**
 src/**
 scripts/**
 node_modules/**
+examples/**
+bin/**

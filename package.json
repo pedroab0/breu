@@ -10,10 +10,21 @@
   },
   "license": "MIT",
   "pricing": "Free",
+  "bin": {
+    "breu": "./bin/breu.js"
+  },
+  "files": [
+    "bin",
+    "themes"
+  ],
   "scripts": {
-    "build": "node ./scripts/build.js",
+    "build": "node ./scripts/build.js && npm run build:warp && npm run build:gemini && npm run build:zsh && npm run build:zsh-syntax && npm run build:opencode",
     "build:warp": "node ./scripts/build-warp.js",
     "build:gemini": "node ./scripts/build-gemini.js",
+    "build:zsh": "node ./scripts/build-zsh.js",
+    "build:zsh-syntax": "node ./scripts/build-zsh-syntax.js",
+    "build:opencode": "node ./scripts/build-opencode.js",
+    "install:theme": "node ./bin/breu.js",
     "package": "vsce package",
     "vscode:prepublish": "npm run build"
   },
